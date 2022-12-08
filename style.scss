@@ -1,0 +1,97 @@
+$dark: #242526;
+$black: #18191A;
+$secondary:#3A3B3C;
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "./node_modules/font-awesome/css/font-awesome.min.css";
+#navbarSupportedContent .nav-item {
+    width: 100px !important;
+    &:hover {
+        background-color: $secondary;
+        border-radius: 10px;
+    }
+}
+
+#navbarSupportedContent .nav-link {
+    color: whitesmoke;
+}
+
+.active {
+    color: #1d4ed8 !important;
+    border-bottom: 3px solid #1d4ed8;
+}
+
+.myProfile {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-btn {
+    width: 50px;
+    height: 50px;
+}
+
+.otherProfile {
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.aside-bar-hover:hover {
+    background-color: $secondary;
+    border-radius: 6px;
+}
+
+.friends {
+    background: url('./img/asideBar.png');
+    background-position: 0px -300px;
+    background-size: 38px 570px;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.groups {
+    background: url('./img/asideBar.png');
+    background-position: 0px -75px;
+    background-size: 38px 570px;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.saved {
+    background: url('./img/asideBar.png');
+    background-position: 0px -190px;
+    background-size: 38px 570px;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.mostRecent {
+    background: url('./img/mostRecent.png');
+    background-position: 0px 0px;
+    background-size: 38px;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.marketplace {
+    background: url('./img/asideBar.png');
+    background-position: 0px -420px;
+    background-size: 38px 570px;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}

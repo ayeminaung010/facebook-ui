@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook UI Design</title>
+</head>
+
+<body class=" bg-black">
+    <!-- nav bar start  -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid  row">
+            <div class="col-3 ">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/2021_Facebook_icon.svg.webp" style=" height:40px" alt="">
+                    <i class=" bi bi-search text-white-50 position-absolute fs-6 p-1" style="left:70px"></i>
+                    <input type="text" class="form-control w-50  d-inline bg-secondary rounded-4 border-0 text-white px-5 ms-1" placeholder="Search Facebook">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse   col-6 justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0   ">
+                    <li class="nav-item  me-4 text-center" title="home">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <i class=" bi bi-house fs-3"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item  me-4 text-center" title="watch">
+                        <a class="nav-link " aria-current="page" href="#">
+                            <i class="bi bi-display fs-3"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item  me-4 text-center" title="group">
+                        <a class="nav-link " aria-current="page" href="#">
+                            <i class=" bi bi-people fs-3"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item   me-4 text-center" title="gaming">
+                        <a class="nav-link " aria-current="page" href="#">
+                            <i class="bi bi-controller fs-3"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 ">
+                <div class="d-flex  justify-content-end ">
+                    <button class=" btn  btn-secondary  ms-3 rounded-pill nav-btn" title="menu">
+                        <i class=" bi bi-menu-button-fill fs-5"></i>
+                    </button>
+
+                    <button class=" btn  btn-secondary ms-3  rounded-pill nav-btn" title="messenger">
+                        <i class=" bi bi-messenger fs-5"></i>
+                    </button>
+
+                    <button class=" btn  btn-secondary  ms-3 rounded-pill nav-btn" title="notification">
+                        <i class=" bi bi-bell-fill fs-5"></i>
+                    </button>
+                    <a href="" class=" ms-3" title="profile">
+                        <img src="./img/myprofile.jpg" class="myProfile  img-fluid rounded-pill" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav bar end  -->
+
+    <!-- body start  -->
+    <div class="container-fluid">
+        <div class="row justify-content-start">
+            <!-- aside bar  -->
+            <div class="col-lg-3 ">
+                <div class=" my-2">
+                    <ul class=" m-0 p-0 ">
+                        <li class=" py-2 px-2 aside-bar-hover">
+                            <a href="" class=" text-decoration-none">
+                                <img src="./img/myprofile.jpg" class="otherProfile" alt="">
+                                <span class=" ms-2  text-white">Aye Min Aung</span>
+                            </a>
+                        </li>
+                        <li class=" py-2 px-2 aside-bar-hover">
+                            <a href="" class=" d-flex text-decoration-none">
+                                <span class="friends"></span>
+                                <span class="ms-2 pt-2  text-white ">Friends</span>
+                            </a>
+                        </li>
+                        <li class=" py-2 px-2 aside-bar-hover">
+                            <a href="" class=" d-flex text-decoration-none">
+                                <span class="groups"></span>
+                                <span class="ms-2 pt-2  text-white ">Groups</span>
+                            </a>
+                        </li>
+                        <li class=" py-2 px-2 aside-bar-hover">
+                            <a href="" class=" d-flex text-decoration-none">
+                                <span class="saved"></span>
+                                <span class="ms-2 pt-2  text-white ">Saved</span>
+                            </a>
+                        </li>
+                        <li class=" py-2 px-2 aside-bar-hover">
+                            <a href="" class=" d-flex text-decoration-none">
+                                <span class=" mostRecent"></span>
+                                <span class="ms-2 pt-2  text-white ">Most Recent</span>
+                            </a>
+                        </li>
+                        <li class=" py-2 px-2 aside-bar-hover">
+                            <a href="" class=" d-flex text-decoration-none">
+                                <span class="marketplace"></span>
+                                <span class="ms-2 pt-2  text-white ">Marketplace</span>
+                            </a>
+                        </li>
+                        <li class=" py-2 px-2 aside-bar-hover">
+                            <a href="" class=" d-flex text-decoration-none">
+                                <button class=" btn btn-secondary rounded-pill">
+                                    <i class="bi bi-arrow-down-circle text-white fs-5"></i>
+                                </button>
+                                <span class="ms-2 pt-2  text-white ">See more</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr class=" text-white">
+                </div>
+            </div>
+            <!-- aside bar end  -->
+
+            <!-- home section  -->
+            <div class="col bg-warning">
+                home
+            </div>
+            <!-- home section end  -->
+
+            <!-- aside end bar  -->
+            <div class="col-lg-3 bg-info">
+                end
+            </div>
+            <!-- aside end bae end   -->
+        </div>
+    </div>
+
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
