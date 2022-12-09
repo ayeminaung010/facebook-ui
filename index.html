@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook UI Design</title>
+    <link rel="icon" href="./img/2021_Facebook_icon.svg.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <body class=" bg-black">
     <!-- nav bar start  -->
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
         <div class="container-fluid  row">
             <div class="col-3 ">
                 <a class="navbar-brand" href="#">
@@ -26,7 +29,7 @@
                 <ul class="navbar-nav  mb-2 mb-lg-0   ">
                     <li class="nav-item  me-4 text-center" title="home">
                         <a class="nav-link active" aria-current="page" href="#">
-                            <i class=" bi bi-house fs-3"></i>
+                            <i class="bi bi-house-door-fill fs-3"></i>
                         </a>
                     </li>
                     <li class="nav-item  me-4 text-center" title="watch">
@@ -70,9 +73,9 @@
 
     <!-- body start  -->
     <div class="container-fluid">
-        <div class="row justify-content-start">
+        <div class="row justify-content-start" id="asideBar">
             <!-- aside bar  -->
-            <div class="col-lg-3 ">
+            <div class="col-lg-3 vh-100 overflow-scroll ">
                 <div class=" my-2">
                     <ul class=" m-0 p-0 ">
                         <li class=" py-2 px-2 aside-bar-hover">
@@ -114,20 +117,303 @@
                         <li class=" py-2 px-2 aside-bar-hover">
                             <a href="" class=" d-flex text-decoration-none">
                                 <button class=" btn btn-secondary rounded-pill">
-                                    <i class="bi bi-arrow-down-circle text-white fs-5"></i>
+                                    <i class="fa-solid fa-chevron-down text-white fs-6"></i>
                                 </button>
                                 <span class="ms-2 pt-2  text-white ">See more</span>
                             </a>
                         </li>
                     </ul>
                     <hr class=" text-white">
+
+                    <div class=" d-flex justify-content-between">
+                        <h6 class="fs-6 text-white fw-bold">Your shortcuts</h6>
+                        <a href="" class=" text-decoration-none">Edit</a>
+                    </div>
+                    <div class="">
+                        <ul class=" m-0 p-0">
+                            <li class=" py-2 px-2 aside-bar-hover ">
+                                <a href="" class=" d-flex text-decoration-none text-white align-items-center">
+                                    <img src="./img/cat-gp.png" class="group-img rounded-3" alt="">
+                                    <span class=" ms-2  ">A group where we all pretend to be cat</span>
+                                </a>
+                            </li>
+                            <li class=" py-2 px-2 aside-bar-hover ">
+                                <a href="" class=" d-flex text-decoration-none text-white align-items-center">
+                                    <img src="./img/cat-gp.png" class="group-img rounded-3" alt="">
+                                    <span class=" ms-2  ">A group where we all pretend to be cat</span>
+                                </a>
+                            </li>
+                            <li class=" py-2 px-2 aside-bar-hover ">
+                                <a href="" class=" d-flex text-decoration-none text-white align-items-center">
+                                    <img src="./img/cat-gp.png" class="group-img rounded-3" alt="">
+                                    <span class=" ms-2  ">A group where we all pretend to be cat</span>
+                                </a>
+                            </li>
+                            <li class=" py-2 px-2 aside-bar-hover ">
+                                <a href="" class=" d-flex text-decoration-none text-white align-items-center">
+                                    <img src="./img/cat-gp.png" class="group-img rounded-3" alt="">
+                                    <span class=" ms-2  ">A group where we all pretend to be cat</span>
+                                </a>
+                            </li>
+                            <li class=" py-2 px-2 aside-bar-hover ">
+                                <a href="" class=" d-flex text-decoration-none text-white align-items-center">
+                                    <img src="./img/cat-gp.png" class="group-img rounded-3" alt="">
+                                    <span class=" ms-2  ">A group where we all pretend to be cat</span>
+                                </a>
+                            </li>
+                            <li class=" py-2 px-2 aside-bar-hover ">
+                                <a href="" class=" d-flex text-decoration-none text-white align-items-center">
+                                    <img src="./img/cat-gp.png" class="group-img rounded-3" alt="">
+                                    <span class=" ms-2  ">A group where we all pretend to be cat</span>
+                                </a>
+                            </li>
+
+                            <li class=" py-2 px-2 aside-bar-hover">
+                                <a href="" class=" d-flex text-decoration-none">
+                                    <button class=" btn btn-secondary rounded-pill">
+                                        <i class="fa-solid fa-chevron-down text-white fs-6"></i>
+                                    </button>
+                                    <span class="ms-2 pt-2  text-white ">See more</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
                 </div>
             </div>
             <!-- aside bar end  -->
 
             <!-- home section  -->
-            <div class="col bg-warning">
-                home
+            <div class="col-lg-6 overflow-scroll vh-100">
+                <div class="myDays mt-3 ">
+                    <div class="row justify-content-center g-2">
+                        <div class="col-2 ">
+                            <div class="card border-0 rounded-3 overflow-hidden">
+                                <img src="./img/myprofile.jpg" class="myStory rounded-top" alt="">
+                                <div class="card-body bg-dark rounded-bottom ">
+                                    <button class=" btn btn-primary  rounded-pill position-absolute btnPlus fs-5"> <i class="bi bi-plus "></i></button>
+                                    <span class="fw-bold text-white small ">Create Story</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 ">
+                            <div class="card border-0 rounded-3 overflow-hidden">
+                                <img src="./img/person1.jpg" class=" rounded-top otherStory" alt="">
+                                <button class=" btn p-0 ms-2 mt-2  rounded-pill position-absolute  fs-5"> 
+                                    <img src="./img/myprofile.jpg" class=" myDayProfile border-primary border border-4" alt=""> 
+                                </button>
+                                <div class=" ">
+                                    <span class=" position-absolute text-white text-center mb-2  fw-bold bottom-0 " style=" right:50px;">Tun Tun</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 ">
+                            <div class="card border-0 rounded-3 overflow-hidden">
+                                <img src="./img/person1.jpg" class=" rounded-top otherStory" alt="">
+                                <button class=" btn p-0 ms-2 mt-2  rounded-pill position-absolute  fs-5"> 
+                                    <img src="./img/myprofile.jpg" class=" myDayProfile border-primary border border-4" alt=""> 
+                                </button>
+                                <div class=" ">
+                                    <span class=" position-absolute text-white text-center mb-2  fw-bold bottom-0 " style=" right:50px;">William</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 ">
+                            <div class="card border-0 rounded-3 overflow-hidden">
+                                <img src="./img/person1.jpg" class=" rounded-top otherStory" alt="">
+                                <button class=" btn p-0 ms-2 mt-2  rounded-pill position-absolute  fs-5"> 
+                                    <img src="./img/myprofile.jpg" class=" myDayProfile border-primary border border-4" alt=""> 
+                                </button>
+                                <div class=" ">
+                                    <span class=" position-absolute text-white text-center mb-2  fw-bold bottom-0 " style=" right:50px;">Tun Tun</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 ">
+                            <div class="card border-0 rounded-3 overflow-hidden ">
+                                <img src="./img/person1.jpg" class=" rounded-top otherStory" alt="">
+                                <button class=" btn p-0 ms-2 mt-2  rounded-pill position-absolute  fs-5"> 
+                                    <img src="./img/myprofile.jpg" class=" myDayProfile border-primary border border-4" alt=""> 
+                                </button>
+                                <div class=" ">
+                                    <span class=" position-absolute text-white text-center mb-2  fw-bold bottom-0 " style=" right:50px;">Tun Tun</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="onYourMind">
+                    <div class="row justify-content-center mt-3 g-0">
+                        <div class="col-lg-10 rounded-3 bg-dark">
+                            <div class="typing-box px-2">
+                                <div class="row justify-content-center pt-2 g-0">
+                                    <div class="col-1">
+                                        <img src="./img/myprofile.jpg" class="otherProfile rounded-pill" alt="">
+                                    </div>
+                                    <div class="col-10">
+                                        <input type="text" class=" form-control bg-secondary border-dark ms-3  rounded-5 text-white" placeholder="What is on your mind , Aye?">
+                                    </div>
+                                    <div class="d-flex justify-content-center ">
+                                        <hr class=" text-white  text-center w-100  mt-2 p-0">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="create-post py-2">
+                                <div class="row justify-content-center pb-1 px-2">
+                                    <div class="col-4">
+                                        <button class=" btn aside-bar-hover w-100 ">
+                                            <i class="bi bi-camera-reels-fill text-danger  me-1"></i> <span class=" text-white-50">Live Video</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-4">
+                                        <button class=" btn aside-bar-hover  w-100">
+                                            <i class="bi bi-images text-success  me-1"></i> <span class=" text-white-50">Photo/Video</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-4">
+                                        <button class=" btn aside-bar-hover w-100">
+                                            <i class="bi bi-emoji-smile text-warning me-1"></i> <span class=" text-white-50">Feeling/activity</span>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 rounded-3 bg-dark my-3">
+
+                            <div class="posts "> //start posts
+                                <div class="row  p-3">
+                                    <div class="col-lg-1 position-relative">
+                                        <img src="./img/cat-gp.png" class="group-img rounded-3" alt="">
+                                        <img src="./img/myprofile.jpg" class=" group-profile border-primary border border-4 position-absolute" style=" margin-top:-20px;right: -10px;" alt="">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex flex-column">
+                                            <a href="" class=" text-white small fw-bold">
+                                                A group where we all pretend to be cat
+                                            </a>
+                                            <div class=" d-flex ">
+                                                <span class="text-white-50 fw-bold small">Aye Min Aung</span>
+                                                <span class=" text-white-50 ms-2 small">6 hr </span>
+                                                <i class="bi bi-globe-americas text-white-50 ms-2"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 ">
+                                        <div class="d-flex justify-content-end ">
+                                            <a href="" class=" text-white-50">
+                                                <i class="bi bi-three-dots ms-2 fs-5"></i>
+                                            </a>
+                                            <a href="" class=" text-white-50">
+                                                <i class="bi bi-x-lg ms-2 fs-5"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 mt-3 ">
+                                        <div class=" captions text-white">
+                                            <h6>မမရဲ့မောင်လေးပါ ဟူးမန်းရယ်
+                                            </h6>
+                                        </div>
+                                        <div class="see-translation ">
+                                            <a href="" class="text-white-50 text-decoration-none">
+                                                <p>See Translation</p>
+                                            </a>
+                                        </div>
+                                        <div class=" ">
+                                            <video width=" 100%" class=" " height="500px" controls>
+                                                <source src="./video/cat-video.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex p-2">
+                                                <div class="d-flex">
+                                                    <svg xmlns='http://www.w3.org/2000/svg' width="20" xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'><defs><linearGradient id='a' x1='50%' x2='50%' y1='10.25%' y2='100%'><stop offset='0%' stop-color='#FEEA70'/><stop offset='100%' stop-color='#F69B30'/></linearGradient><linearGradient id='d' x1='50%' x2='50%' y1='0%' y2='100%'><stop offset='0%' stop-color='#472315'/><stop offset='100%' stop-color='#8B3A0E'/></linearGradient><linearGradient id='e' x1='50%' x2='50%' y1='0%' y2='81.902%'><stop offset='0%' stop-color='#FC607C'/><stop offset='100%' stop-color='#D91F3A'/></linearGradient><filter id='c' width='118.8%' height='118.8%' x='-9.4%' y='-9.4%' filterUnits='objectBoundingBox'><feGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/><feOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/><feComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/><feColorMatrix in='shadowInnerInner1' values='0 0 0 0 0.921365489 0 0 0 0 0.460682745 0 0 0 0 0 0 0 0 0.35 0'/></filter><path id='b' d='M16 8A8 8 0 110 8a8 8 0 0116 0'/></defs><g fill='none'><use fill='url(#a)' xlink:href='#b'/><use fill='black' filter='url(#c)' xlink:href='#b'/><path fill='url(#d)' d='M3 8.008C3 10.023 4.006 14 8 14c3.993 0 5-3.977 5-5.992C13 7.849 11.39 7 8 7c-3.39 0-5 .849-5 1.008'/><path fill='url(#e)' d='M4.541 12.5c.804.995 1.907 1.5 3.469 1.5 1.563 0 2.655-.505 3.459-1.5-.551-.588-1.599-1.5-3.459-1.5s-2.917.912-3.469 1.5'/><path fill='#2A3755' d='M6.213 4.144c.263.188.502.455.41.788-.071.254-.194.369-.422.371-.78.011-1.708.255-2.506.612-.065.029-.197.088-.332.085-.124-.003-.251-.058-.327-.237-.067-.157-.073-.388.276-.598.545-.33 1.257-.48 1.909-.604a7.077 7.077 0 00-1.315-.768c-.427-.194-.38-.457-.323-.6.127-.317.609-.196 1.078.026a9 9 0 011.552.925zm3.577 0a8.953 8.953 0 011.55-.925c.47-.222.95-.343 1.078-.026.057.143.104.406-.323.6a7.029 7.029 0 00-1.313.768c.65.123 1.363.274 1.907.604.349.21.342.44.276.598-.077.18-.203.234-.327.237-.135.003-.267-.056-.332-.085-.797-.357-1.725-.6-2.504-.612-.228-.002-.351-.117-.422-.37-.091-.333.147-.6.41-.788z'/></g></svg>
+                                                    <svg xmlns='http://www.w3.org/2000/svg' width="20" xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'><defs><linearGradient id='a' x1='50%' x2='50%' y1='0%' y2='100%'><stop offset='0%' stop-color='#FF6680'/><stop offset='100%' stop-color='#E61739'/></linearGradient><filter id='c' width='118.8%' height='118.8%' x='-9.4%' y='-9.4%' filterUnits='objectBoundingBox'><feGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/><feOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/><feComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/><feColorMatrix in='shadowInnerInner1' values='0 0 0 0 0.710144928 0 0 0 0 0 0 0 0 0 0.117780134 0 0 0 0.349786932 0'/></filter><path id='b'   d='M8 0a8 8 0 100 16A8 8 0 008 0z'/></defs><g fill='none'><use fill='url(#a)' xlink:href='#b'/><use fill='black' filter='url(#c)' xlink:href='#b'/><path fill='white' d='M10.473 4C8.275 4 8 5.824 8 5.824S7.726 4 5.528 4c-2.114 0-2.73 2.222-2.472 3.41C3.736 10.55 8 12.75 8 12.75s4.265-2.2 4.945-5.34c.257-1.188-.36-3.41-2.472-3.41'/></g></svg>
+                                                </div>
+                                                <div class=" text-white-50 ms-2">
+                                                    <span>2.2K</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex p-2">
+                                                <div class="d-flex">
+                                                    <a href="" class=" text-white-50 ms-2 text-decoration-none">
+                                                        <span>18 comments</span>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a href="" class=" text-white-50 ms-2 text-decoration-none">
+                                                        <span>25 shares</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="">
+                                            <hr class=" w-100 text-white-50 m-0 p-0">
+                                        </div>
+                                        <div class="react-btns">
+                                            <div class="d-flex py-1">
+                                                <button class="btn aside-bar-hover w-100 text-white-50">
+                                                    <i class="fa-solid fa-thumbs-up "></i>
+                                                    <span>Like</span>
+                                                </button>
+                                                <button class="btn aside-bar-hover w-100 text-white-50">
+                                                    <i class="fa-regular fa-message "></i>
+                                                    <span>Comment</span>
+                                                </button>
+                                                <button class="btn aside-bar-hover w-100 text-white-50">
+                                                    <i class="fa-solid fa-share "></i>
+                                                    <span>Share</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <hr class=" w-100 text-white-50 m-0 p-0">
+                                        </div>
+                                        <div class="d-flex justify-content-between py-1">
+                                            <div class="view-comments ">
+                                                <a href="" class="text-white-50 text-decoration-none fw-bold ">
+                                                    <p>View previous comments</p>
+                                                </a>
+                                            </div>
+                                            <div class="all-comments ">
+                                                <a href="" class="text-white-50 text-decoration-none fw-bold ">
+                                                    <span>All Comments</span>
+                                                    <span>
+                                                        <i class="fa-solid fa-caret-down"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 ">
+                                            <div class="comment d-flex">
+                                                <div class="">
+                                                    <img src="./img/myprofile.jpg" class=" otherProfile" alt="">
+                                                </div>
+                                                <div class=" comment-box text-white d-flex flex-column ms-2  ">
+                                                    <span class=" fw-bold  small">Aye Min Aung</span>
+                                                    <span class=" small">ကလေးကိုကွာ🥲</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
             <!-- home section end  -->
 
