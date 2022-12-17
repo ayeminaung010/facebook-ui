@@ -101,7 +101,7 @@ ul li {
     object-fit: cover;
 }
 
-#asideBar {
+.asideBar {
      ::-webkit-scrollbar {
         width: 10px;
     }
@@ -167,11 +167,6 @@ ul li {
     padding: 8px 7px 8px 7px;
 }
 
-.small-icons {
-    width: 40px;
-    height: 40px;
-}
-
 .online-active {
     width: 10px;
     height: 10px;
@@ -192,4 +187,54 @@ ul li {
 
 .searchBar {
     width: 250px;
+}
+
+.btn-hover {
+    height: 35px;
+    width: 35px;
+    border-radius: 20px;
+    font-size: 19px;
+}
+
+.btn-hover:hover {
+    background-color: $secondary;
+}
+
+.text-hover:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.text-hover {
+    text-decoration: none;
+}
+
+.reaction {
+    width: 210px;
+    border-radius: 20px;
+    background-color: $secondary;
+    position: absolute;
+    top: -20px;
+}
+
+.react-choice {
+    display: none;
+}
+
+.reaction svg:hover {
+    width: 80px;
+}
+
+.myDayName {
+    right: 50px;
+}
+
+@media screen and (max-width: 400px) {
+    .btnPlus {
+        margin-top: -40px;
+        right: 20px;
+    }
+    .myDayName {
+        right: 10px;
+    }
 }
